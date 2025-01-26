@@ -7,50 +7,17 @@
 
   <!-- Carrossel -->
   <div class="carousel-container">
-    <button class="carousel-button left" onclick="moveLeft()">&#8249;</button>
+    <button class="carousel-button left" (click)="moveLeft()">&#8249;</button>
+
     <div class="services-cards">
-      <div id="item1" class="service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/13027/13027079.png" alt="Empacotadores para Supermercados">
-        <h3>Supermercados</h3>
-        <button class="cta-button">SAIBA MAIS</button>
-      </div>
-      <div id="item2" class="service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/4466/4466877.png" alt="Fiscal de Obras">
-        <h3>Fiscal de Obras</h3>
-        <button class="cta-button">SAIBA MAIS</button>
-      </div>
-      <div id="item3" class="service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/4221/4221310.png" alt="Higienização">
-        <h3>Higienização</h3>
-        <button class="cta-button">SAIBA MAIS</button>
-      </div>
-      <div id="item4" class="service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/291/291405.png" alt="Limpeza Mecanizada">
-        <h3>Limpeza Mecanizada</h3>
-        <button class="cta-button">SAIBA MAIS</button>
-      </div>
-      <div id="item5" class="service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3130/3130472.png" alt="Locação de Veículos">
-        <h3>Locação de Veículos</h3>
-        <button class="cta-button">SAIBA MAIS</button>
-      </div>
-      <div id="item6" class="service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/6680/6680546.png" alt="Motoristas">
-        <h3>Motoristas</h3>
-        <button class="cta-button">SAIBA MAIS</button>
-      </div>
-      <div id="item7" class="service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/6680/6680546.png" alt="Motoristas">
-        <h3>Motoristas</h3>
-        <button class="cta-button">SAIBA MAIS</button>
-      </div>
-      <div id="item8" class="service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/6680/6680546.png" alt="Motoristas">
-        <h3>Motoristas</h3>
+      <div *ngFor="let image of visibleImages" class="service-card">
+        <img alt="tee" [src]="image.src" [alt]="image.alt">
+        <h3>{{ image.title }}</h3>
         <button class="cta-button">SAIBA MAIS</button>
       </div>
     </div>
-    <button class="carousel-button right" onclick="moveRight()">&#8250;</button>
+
+    <button class="carousel-button right" (click)="moveRight()">&#8250;</button>
   </div>
 
   <!-- Seção de Dúvidas -->

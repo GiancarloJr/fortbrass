@@ -26,6 +26,7 @@ app-services {
   .services-header h2 {
     font-size: 2.5rem;
     color: #002060;
+    margin-top: 16px;
   }
 
   .services-cards {
@@ -50,7 +51,7 @@ app-services {
     box-sizing: border-box;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 260px;
-    width: 150px;
+    width: 250px;
   }
 
   .service-card img {
@@ -89,7 +90,7 @@ app-services {
     z-index: 10;
     margin: 20px auto;
     padding: 25px;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +138,7 @@ app-services {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 48%;
+    width: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -157,21 +158,14 @@ app-services {
   }
 
   .carousel-container {
-    /* background-color: #333; */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    //   padding: 0px 50px 0px 50px;
     overflow: hidden;
-    /* Garante que apenas 4 itens fiquem visíveis */
     width: 95%;
-    /* Ajuste a largura do carrossel */
     margin: auto;
-    /* background-color: #747474; */
   }
-
-
 
   .services-cards {
     display: flex;
@@ -185,9 +179,7 @@ app-services {
     padding: 15px;
     font-size: 24px;
     cursor: pointer;
-    position: absolute;
-    top: 43%;
-    transform: translateY(-50%);
+    //    transform: translateY(-50%);
     z-index: 2;
     border-radius: 5px;
   }
