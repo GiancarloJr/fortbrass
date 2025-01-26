@@ -6,6 +6,8 @@ import { PageComponent } from './page.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { AboutComponent } from '../about/about.component';
+import { ServicesComponent } from '../services/services.component';
+import { FooterComponent } from '../footer/footer.component';
 
 const routes: Routes = [
   {
@@ -18,7 +20,9 @@ const routes: Routes = [
   declarations: [
     PageComponent,
     HeaderComponent,
-    AboutComponent
+    AboutComponent,
+    ServicesComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
