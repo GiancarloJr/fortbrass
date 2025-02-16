@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { AboutComponent } from '../about/about.component';
 import { ServicesComponent } from '../services/services.component';
 import { FooterComponent } from '../footer/footer.component';
+import { JobsComponent } from '../jobs/jobs.component';
 
 const routes: Routes = [
   {
@@ -22,7 +23,8 @@ const routes: Routes = [
     HeaderComponent,
     AboutComponent,
     ServicesComponent,
-    FooterComponent
+    FooterComponent,
+    JobsComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,21 @@
+<section class="vagas-container">
+  <div class="text-box">
+    <h6 class="categoria">VAGAS DE EMPREGO</h6>
+    <h2>ENCONTRE AQUI ALGUMAS VAGAS DISPONÍVEIS</h2>
+    <p>
+      Você pode encontrar aqui diversas vagas, veja a que melhor se adequa a você
+      e mande seu currículo agora mesmo!
+    </p>
+  </div>
+
+  <div class="vagas-carousel">
+    <div *ngFor="let vaga of vagas" class="vaga-card">
+      <img [src]="vaga.imagem" alt="{{ vaga.titulo }}" />
+      <div class="vaga-info">
+        <h4>{{ vaga.titulo }}</h4>
+        <p [innerHTML]="vaga.descricao"></p>
+        <button class="saiba-mais">SAIBA MAIS</button>
+      </div>
+    </div>
+  </div>
+</section>

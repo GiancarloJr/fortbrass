@@ -1,0 +1,92 @@
+app-jobs {
+  .vagas-container {
+    display: flex;
+    flex-direction: row;
+    background: #0a0f35;
+    color: white;
+    padding: 40px;
+    gap: 20px;
+
+    .text-box {
+      flex: 1;
+      max-width: 350px;
+
+      .categoria {
+        color: yellow;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 28px;
+        margin-top: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+
+    .vagas-carousel {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      flex: 2;
+
+      .vaga-card {
+        background: white;
+        color: black;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 250px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        text-align: center;
+
+        img {
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+        }
+
+        .vaga-info {
+          padding: 10px;
+
+          h4 {
+            font-size: 18px;
+            font-weight: bold;
+          }
+
+          p {
+            font-size: 14px;
+            margin: 5px 0;
+          }
+
+          .saiba-mais {
+            background: #0a0f35;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-top: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .vagas-container {
+      flex-direction: column;
+      text-align: center;
+
+      .vagas-carousel {
+        justify-content: center;
+      }
+    }
+  }
+
+}
