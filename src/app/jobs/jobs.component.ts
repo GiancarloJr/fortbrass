@@ -23,6 +23,11 @@ export class JobsComponent {
       titulo: 'AUXILIAR DE LIMPEZA',
       descricao: '40 HORAS SEMANAIS',
       imagem: '../../assets/images/fundo-01.jpg',
+    },
+    {
+      titulo: 'AUXILIAR DE LIMPEZA',
+      descricao: '40 HORAS SEMANAIS',
+      imagem: '../../assets/images/fundo-01.jpg',
     }
   ];
 
