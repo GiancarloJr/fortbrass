@@ -26,7 +26,7 @@ export class ServicesComponent {
   constructor() { }
 
   ngOnInit(): void {
-    this.startAutoSlide();
+    // this.startAutoSlide();
   }
 
   ngOnDestroy(): void {
