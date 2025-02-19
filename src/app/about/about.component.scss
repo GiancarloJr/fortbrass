@@ -163,4 +163,16 @@
   .about-image {
     display: none;
   }
+
+  .about-text h2 {
+    
+    margin-bottom: 50px;
+  }
+
+  .about-text p {
+    text-align: left; /* Melhor leitura no mobile */
+  }
+
+
 }
+
