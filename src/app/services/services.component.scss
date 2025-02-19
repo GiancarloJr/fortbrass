@@ -7,6 +7,7 @@ app-services {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    // height: 700px;
     width: 100%;
     padding: 20px 10px;
   }
@@ -92,9 +93,9 @@ app-services {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 10;
-    margin: 20px auto;
+    margin: 35px auto;
     padding: 25px;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,6 +143,10 @@ app-services {
       .areas-cards {
         grid-template-columns: repeat(4, 1fr);
       }
+
+      // .contact-section {
+      //   width: 100%;
+      // }
   }
 
   .area-card {
