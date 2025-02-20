@@ -4,6 +4,7 @@ app-jobs {
   align-items: center;
   justify-content: center;
   background: #0a0f35;
+  width: 100%;
 
   .vagas-container {
     display: flex;
@@ -12,11 +13,14 @@ app-jobs {
     color: white;
     padding: 40px;
     gap: 20px;
-    height: 600px;
+    min-height: 600px;
+    width: 100%;
 
     .text-box {
       flex: 1;
-      max-width: 350px;
+      // height: 400px;
+      max-width: 100% ;
+      margin-bottom: 20px;
 
       .categoria {
         color: yellow;
@@ -38,13 +42,14 @@ app-jobs {
       display: flex;
       gap: 15px;
       flex: 2;
+      align-items: center;
 
       .vaga-card {
         background: white;
         color: black;
         border-radius: 8px;
         overflow: hidden;
-        width: 250px;
+        min-width: 150px;
         scroll-snap-align: start;
         text-align: center;
 
@@ -86,13 +91,46 @@ app-jobs {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1270px) {
     .vagas-container {
       flex-direction: column;
       text-align: center;
+      // width: 100%;
 
       .vagas-carousel {
         justify-content: center;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .vagas-container {
+      flex-direction: column;
+      text-align: center;
+      // width: 100%;
+
+      .vagas-carousel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); // 2 colunas
+        justify-content: center;
+        gap: 30px;
+        // width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 630px) {
+    .vagas-container {
+      flex-direction: column;
+      text-align: center;
+      // width: 100%;
+
+      .vagas-carousel {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); // 2 colunas
+        justify-content: center;
+        // gap: 20px;
+        // width: 100%;
       }
     }
   }
