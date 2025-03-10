@@ -4,8 +4,10 @@
   justify-content: space-between;
   padding: 50px 5%;
   background-color: #ffffff;
-  min-height: 700px; /* Mantém altura mínima, mas cresce conforme necessário */
-  flex-wrap: wrap; /* Permite quebra de linha se precisar */
+  min-height: 700px;
+  /* Mantém altura mínima, mas cresce conforme necessário */
+  flex-wrap: wrap;
+  /* Permite quebra de linha se precisar */
   /* Ajuste a altura conforme necessário */
 }
 
@@ -18,7 +20,7 @@
 }
 
 .about-text {
-  max-width:  100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,10 +44,14 @@
 
 .about-icons {
   display: flex;
-  justify-content: space-evenly; /* Mantém espaçamento uniforme */
-  align-items: center; /* Alinha os ícones verticalmente */
-  flex-wrap: wrap; /* Permite quebra de linha em telas menores */
-  gap: 5%; /* Ajusta a distância entre os ícones */
+  justify-content: space-evenly;
+  /* Mantém espaçamento uniforme */
+  align-items: center;
+  /* Alinha os ícones verticalmente */
+  flex-wrap: wrap;
+  /* Permite quebra de linha em telas menores */
+  gap: 5%;
+  /* Ajusta a distância entre os ícones */
   // margin-bottom: 2px;
   margin-top: 5%;
 }
@@ -62,8 +68,10 @@
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  width: 150px; /* Define um limite de largura para cada item */
-  text-align: center; /* Garante que o texto fique centralizado */
+  width: 150px;
+  /* Define um limite de largura para cada item */
+  text-align: center;
+  /* Garante que o texto fique centralizado */
 }
 
 .icon img {
@@ -74,9 +82,12 @@
 .icon p {
   font-size: 1rem;
   color: #002060;
-  max-width: 140px; /* Limita a largura do texto */
-  word-wrap: break-word; /* Permite quebra de palavras longas */
-  text-align: center; /* Garante que o texto fique centralizado */
+  max-width: 140px;
+  /* Limita a largura do texto */
+  word-wrap: break-word;
+  /* Permite quebra de palavras longas */
+  text-align: center;
+  /* Garante que o texto fique centralizado */
 }
 
 .cta-button {
@@ -103,8 +114,10 @@
 .about-image img {
   width: 100%;
   height: auto;
-  max-width: 400px; /* Limita o tamanho em telas grandes */
-  object-fit: cover; /* Mantém a proporção sem distorcer */
+  max-width: 400px;
+  /* Limita o tamanho em telas grandes */
+  object-fit: cover;
+  /* Mantém a proporção sem distorcer */
 }
 
 .about-image .left-images {
@@ -155,7 +168,8 @@
 
 @media (max-width: 768px) {
   .about-content {
-    flex-direction: column; /* Empilha os elementos */
+    flex-direction: column;
+    /* Empilha os elementos */
     text-align: center;
     gap: 30px;
   }
@@ -165,14 +179,13 @@
   }
 
   .about-text h2 {
-    
+
     margin-bottom: 50px;
   }
 
   .about-text p {
-    text-align: left; /* Melhor leitura no mobile */
+    //  text-align: left; /* Melhor leitura no mobile */
   }
 
 
 }
-

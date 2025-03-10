@@ -17,6 +17,7 @@ app-services {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 800px;
   }
 
   .services-header {
@@ -55,14 +56,16 @@ app-services {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 260px;
     width: 100%;
-    overflow: hidden; /* Evita que imagens maiores quebrem o layout */
+    overflow: hidden;
+    /* Evita que imagens maiores quebrem o layout */
   }
 
   .service-card img {
     padding-top: 20px;
     width: 80px;
     height: 100px;
-    object-fit: cover; /* Mantém a proporção e cobre o espaço disponível */
+    object-fit: cover;
+    /* Mantém a proporção e cobre o espaço disponível */
   }
 
   .cta-button {
@@ -140,13 +143,24 @@ app-services {
   }
 
   @media (min-width: 768px) {
-      .areas-cards {
-        grid-template-columns: repeat(4, 1fr);
-      }
+    .areas-cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
 
-      // .contact-section {
-      //   width: 100%;
-      // }
+    // .contact-section {
+    //   width: 100%;
+    // }
+
+    .services-section {
+      height: 800px;
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    .services-section {
+      height: 1000px;
+    }
   }
 
   .area-card {

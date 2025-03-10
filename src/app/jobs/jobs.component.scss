@@ -8,19 +8,21 @@ app-jobs {
 
   .vagas-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     color: white;
     padding: 40px;
     gap: 20px;
     min-height: 600px;
     width: 100%;
+    height: 700px;
 
     .text-box {
-      flex: 1;
+      //   flex: 1;
       // height: 400px;
-      max-width: 100% ;
+      max-width: 100%;
       margin-bottom: 20px;
+      text-align: center;
 
       .categoria {
         color: yellow;
@@ -108,6 +110,7 @@ app-jobs {
       flex-direction: column;
       text-align: center;
       // width: 100%;
+      height: 1200px;
 
       .vagas-carousel {
         display: grid;
@@ -124,6 +127,7 @@ app-jobs {
       flex-direction: column;
       text-align: center;
       // width: 100%;
+      height: 2000px;
 
       .vagas-carousel {
         display: grid;
